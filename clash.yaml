@@ -119,11 +119,11 @@ Proxy:
 
 # 配置开始
 
-- name: "日本2"
+- name: "新加坡1"
   type: trojan
-  server: jp2.kimikimi2835.xyz
+  server: sp1.kimi.pw
   port: 443
-  password: da393aa0
+  password: 75fa78b6
 
 
 - name: "日本3"
@@ -132,29 +132,18 @@ Proxy:
   port: 443
   password: b9c79784
 
-- name: "台湾1"
-  type: trojan
-  server: tw1.kimikimi2835.xyz
-  port: 443
-  password: bc3a4dd0
-
-- name: "韩国1"
-  type: trojan
-  server: kr1.kimikimi2835.xyz
-  port: 443
-  password: 08162da2
 
 - name: "欧洲1"
   type: trojan
-  server: vt1.kimikimi2835.xyz
+  server: eu1.kimi.pw
   port: 443
-  password: 70d7924a
+  password: 5ff230c6
 
 - name: "美国1"
   type: trojan
-  server: us1.kicc.xyz
+  server: us1.kimi.pw
   port: 443
-  password: c92242cb
+  password: 6fa698c2
 
 # VMess 的配置
 - name: "日本1(旧)" # 软件显示的节点名字
@@ -202,10 +191,8 @@ Proxy Group:
 - name: "PROXY"
   type: select
   proxies:
+    - "新加坡1"
     - "日本3"
-    - "日本2"
-    - "台湾1"
-    - "韩国1"
     - "欧洲1"
     - "美国1"
     - "日本1(旧)"
@@ -227,10 +214,8 @@ Proxy Group:
 - name: "GlobalMedia"
   type: select
   proxies:
+    - "新加坡1"
     - "日本3"
-    - "日本2"
-    - "台湾1"
-    - "韩国1"
     - "欧洲1"
     - "美国1"
     - "日本1(旧)"
@@ -242,10 +227,8 @@ Proxy Group:
   type: select
   proxies:
     - "DIRECT"
+    - "新加坡1"
     - "日本3"
-    - "日本2"
-    - "台湾1"
-    - "韩国1"
     - "欧洲1"
     - "美国1"
     - "日本1(旧)"
