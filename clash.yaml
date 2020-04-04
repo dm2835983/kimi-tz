@@ -132,6 +132,11 @@ Proxy:
   port: 443
   password: b9c79784
 
+- name: "美国1"
+  type: trojan
+  server: us1.kimi.pw
+  port: 443
+  password: 6fa698c2
 
 - name: "欧洲1"
   type: trojan
@@ -139,47 +144,9 @@ Proxy:
   port: 443
   password: 5ff230c6
 
-- name: "美国1"
-  type: trojan
-  server: us1.kimi.pw
-  port: 443
-  password: 6fa698c2
 
-# VMess 的配置
-- name: "日本1(旧)" # 软件显示的节点名字
-  type: vmess # 代理类型
-  server: 202.182.109.46 # 服务器 IP
-  port: 55576 #  端口号
-  uuid: 7ff7fb24-d16c-486d-8b5b-081c790899d5
-  alterId: 233  #额外的 ID
-  cipher: auto
-#  #上面几行为必选参数
-#  #下面几行为可选参数  根据你的配置情况来
-#  # udp: true    #默认不开启
-#  # tls: true      #TLS 开启
-#  # skip-cert-verify: true     #默认不开启
-#  # network: ws    # 网路类型 WS HTTP 等
-#  # ws-path: /path  # 路径
-#  # ws-headers:     #默认不开启
-#  #  Host: v2ray.com    # HOST
 
-# VMess 的配置
-- name: "香港1" # 软件显示的节点名字
-  type: vmess # 代理类型
-  server: 35.215.147.232 # 服务器 IP
-  port: 443 #  端口号
-  uuid: bc8aacad-1a0d-465b-9750-95b316c5452c
-  alterId: 233  #额外的 ID
-  cipher: auto
-#  #上面几行为必选参数
-#  #下面几行为可选参数  根据你的配置情况来
-#  # udp: true    #默认不开启
-tls: true      #TLS 开启
-skip-cert-verify: true     #默认不开启
-network: ws    # 网路类型 WS HTTP 等
-ws-path: /kimiblog  # 路径
-#  # ws-headers:     #默认不开启
-Host: gg1.kimikimi2835.xyz    # HOST
+
 
 ###############################################################配置分割线
 
@@ -193,10 +160,9 @@ Proxy Group:
   proxies:
     - "新加坡1"
     - "日本3"
-    - "欧洲1"
     - "美国1"
-    - "日本1(旧)"
-    - "香港1"
+    - "欧洲1"
+
 
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -216,10 +182,8 @@ Proxy Group:
   proxies:
     - "新加坡1"
     - "日本3"
-    - "欧洲1"
     - "美国1"
-    - "日本1(旧)"
-    - "香港1"
+    - "欧洲1"
 
 
 # 大陆流媒体面向港澳台限定服务
@@ -229,10 +193,8 @@ Proxy Group:
     - "DIRECT"
     - "新加坡1"
     - "日本3"
-    - "欧洲1"
     - "美国1"
-    - "日本1(旧)"
-    - "香港1"
+    - "欧洲1"
 
 
 # 运营商及声名狼藉网站劫持
