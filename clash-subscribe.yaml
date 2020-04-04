@@ -121,7 +121,6 @@ Proxy:
 
 
 
-
 - name: "美国1"
   type: trojan
   server: us1.kimi.pw
@@ -133,14 +132,12 @@ Proxy:
   server: eu1.kimi.pw
   port: 443
   password: 5ff230c6
-  
-  - name: "新加坡1"
+
+- name: "新加坡1"
   type: trojan
   server: sp1.kimi.pw
   port: 443
   password: 75fa78b6
-
-
 
 
 
