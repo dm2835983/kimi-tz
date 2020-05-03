@@ -132,11 +132,7 @@ Proxy:
   port: 443
   password: b9c79784
 
-- name: "美国1"
-  type: trojan
-  server: us1.kimi.pw
-  port: 443
-  password: 6fa698c2
+
 
 - name: "欧洲1"
   type: trojan
@@ -160,7 +156,6 @@ Proxy Group:
   proxies:
     - "新加坡1"
     - "日本3"
-    - "美国1"
     - "欧洲1"
 
 
@@ -182,7 +177,6 @@ Proxy Group:
   proxies:
     - "新加坡1"
     - "日本3"
-    - "美国1"
     - "欧洲1"
 
 
@@ -193,7 +187,6 @@ Proxy Group:
     - "DIRECT"
     - "新加坡1"
     - "日本3"
-    - "美国1"
     - "欧洲1"
 
 
