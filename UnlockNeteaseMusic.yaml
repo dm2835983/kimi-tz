@@ -13,13 +13,13 @@ dns:
     - 223.5.5.5
 
 Proxy:
-  - name: 网易云解锁
+  - name: "网易云解锁"
     type: http
     server: 34.97.14.69
     port: 8848
 
 Proxy Group:
-- name: Netease Music
+- name: "Netease Music"
   type: select
   proxies:
   - DIRECT
