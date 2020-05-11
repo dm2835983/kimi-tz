@@ -19,11 +19,11 @@ Proxy:
     port: 8848
 
 Proxy Group:
-  - name: 🎵 网易云音乐
-    type: select
-    proxies:
-      - DIRECT
-      - 网易云解锁
+- name: Netease Music
+  type: select
+  proxies:
+  - DIRECT
+  - 网易云解锁
 
 Rule:
 #Domain规则
