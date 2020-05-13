@@ -119,13 +119,13 @@ Proxy:
 
 # 配置开始
 
-
-
-- name: "美国1"
+- name: "新加坡1"
   type: trojan
-  server: us1.kimi.pw
+  server: sp1.kimi.pw
   port: 443
-  password: 6fa698c2
+  password: 75fa78b6
+
+
 
 - name: "欧洲1"
   type: trojan
@@ -133,11 +133,7 @@ Proxy:
   port: 443
   password: 5ff230c6
 
-- name: "新加坡1"
-  type: trojan
-  server: sp1.kimi.pw
-  port: 443
-  password: 75fa78b6
+
 
 
 
@@ -151,9 +147,9 @@ Proxy Group:
 - name: "PROXY"
   type: select
   proxies:
-    - "美国1"
-    - "欧洲1"
     - "新加坡1"
+    - "欧洲1"
+
 
 # 白名单模式 PROXY，黑名单模式 DIRECT
 - name: "Final"
@@ -171,9 +167,8 @@ Proxy Group:
 - name: "GlobalMedia"
   type: select
   proxies:
-    - "美国1"
-    - "欧洲1"
     - "新加坡1"
+    - "欧洲1"
 
 
 # 大陆流媒体面向港澳台限定服务
@@ -181,9 +176,8 @@ Proxy Group:
   type: select
   proxies:
     - "DIRECT"
-    - "美国1"
-    - "欧洲1"
     - "新加坡1"
+    - "欧洲1"
 
 
 # 运营商及声名狼藉网站劫持
