@@ -22,10 +22,10 @@ dns:
 
 
 proxies:
-- name: 🎵 YF解锁节点
-  type: http
-  server: unblockmusic.yjs2635.xyz
-  port: 60999
+  - name: 🎵 YF解锁节点
+    type: http
+    server: unblockmusic.yjs2635.xyz
+    port: 60999
   
   - name: 🎵 des解锁节点
     type: ss
