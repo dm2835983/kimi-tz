@@ -9,6 +9,8 @@ proxies:
   - {name: IBM_Cloud中转, server: flat-limit-526c.578007348.workers.dev, port: 443, type: vmess, uuid: 9eab845f-6879-4a4b-a690-803639bf48e4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /9eab845f, ws-headers: {Host: flat-limit-526c.578007348.workers.dev}}
   - {name: IBM_Cloud中转主站, server: cloudflare.com, port: 443, type: vmess, uuid: 9eab845f-6879-4a4b-a690-803639bf48e4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /9eab845f, ws-headers: {Host: flat-limit-526c.578007348.workers.dev}}
   - {name: 🇨🇳 IBM_Cloud中转tw, server: icook.tw, port: 443, type: vmess, uuid: 9eab845f-6879-4a4b-a690-803639bf48e4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /9eab845f, ws-headers: {Host: flat-limit-526c.578007348.workers.dev}}
+  - {name: SP1, server: sp1.kimi.pw, port: 443, type: trojan, password: 75fa78b6, sni: sp1.kimi.pw, skip-cert-verify: false}
+  - {name: 🇪🇺 EU1, server: eu1.kimi.pw, port: 443, type: trojan, password: 5ff230c6, sni: eu1.kimi.pw, skip-cert-verify: false}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -19,6 +21,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -28,6 +32,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -38,6 +44,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -53,6 +61,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
   - name: 📲 电报信息
     type: select
     proxies:
@@ -62,6 +72,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -72,6 +84,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -91,6 +105,8 @@ proxy-groups:
       - IBM_Cloud中转
       - IBM_Cloud中转主站
       - 🇨🇳 IBM_Cloud中转tw
+      - SP1
+      - 🇪🇺 EU1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
