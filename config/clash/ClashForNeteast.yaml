@@ -22,10 +22,7 @@ dns:
 
 
 proxies:
-  - name: 🎵 YF解锁节点
-    type: http
-    server: unblockmusic.yjs2635.xyz
-    port: 60999
+
   
   - name: 🎵 des解锁节点
     type: ss
@@ -66,7 +63,6 @@ proxy-groups:
 - name: "Netease Music"
   type: select
   proxies: 
-    - 🎵 YF解锁节点
     - 🎵 des解锁节点
     - 🎵 lolico解锁节点
     - 🎶 自己解锁节点 ( Windows, Android )
