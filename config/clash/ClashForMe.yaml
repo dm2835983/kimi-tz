@@ -17,10 +17,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
+
       - SP1
       - 🇪🇺 EU1
   - name: ♻️ 自动选择
@@ -28,10 +25,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
       - SP1
       - 🇪🇺 EU1
   - name: 🌍 国外媒体
@@ -40,10 +33,6 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
       - SP1
       - 🇪🇺 EU1
   - name: 🌏 国内媒体
@@ -57,10 +46,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
       - SP1
       - 🇪🇺 EU1
   - name: 📲 电报信息
@@ -68,10 +53,6 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
       - SP1
       - 🇪🇺 EU1
   - name: 🍎 苹果服务
@@ -80,10 +61,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
       - SP1
       - 🇪🇺 EU1
   - name: 🎯 全球直连
@@ -101,10 +78,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IBM_Cloud
-      - IBM_Cloud中转
-      - IBM_Cloud中转主站
-      - 🇨🇳 IBM_Cloud中转tw
       - SP1
       - 🇪🇺 EU1
 rules:
