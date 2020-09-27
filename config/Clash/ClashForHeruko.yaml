@@ -10,6 +10,11 @@ proxies:
   - {name: kimiherokuvps3, server: kimiherokuvps3.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps3.herokuapp.com}}
   - {name: kimiherokuvps4, server: kimiherokuvps4.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps4.herokuapp.com}}
   - {name: kimiherokuvps5, server: kimiherokuvps5.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps5.herokuapp.com}}
+  - {name: kimiherokuvps6, server: kimiherokuvps6.herokuapp.com, port: 443, type: vmess, uuid: a469227d-24fe-4c52-a211-ab884a106fe5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps6.herokuapp.com}}
+  - {name: kimiherokuvps7, server: kimiherokuvps7.herokuapp.com, port: 443, type: vmess, uuid: 0347e17e-ab08-4dcf-a2af-49a66143214d, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps7.herokuapp.com}}
+  - {name: kimiherokuvps8, server: kimiherokuvps8.herokuapp.com, port: 443, type: vmess, uuid: 662cb67a-c99f-41fb-bba7-8245632f1681, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps8.herokuapp.com}}
+  - {name: kimiherokuvps9, server: kimiherokuvps9.herokuapp.com, port: 443, type: vmess, uuid: 4c0e4523-17f6-4fa0-89df-da926aad99dc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps9.herokuapp.com}}
+  - {name: kimiherokuvps10, server: kimiherokuvps10.herokuapp.com, port: 443, type: vmess, uuid: ef994edf-9ac9-463e-bb13-02db238e1462, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: kimiherokuvps10.herokuapp.com}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -21,6 +26,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -31,6 +41,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -42,6 +57,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -52,6 +72,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -62,6 +87,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -72,6 +102,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -83,6 +118,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,6 +150,11 @@ proxy-groups:
       - kimiherokuvps3
       - kimiherokuvps4
       - kimiherokuvps5
+      - kimiherokuvps6
+      - kimiherokuvps7
+      - kimiherokuvps8
+      - kimiherokuvps9
+      - kimiherokuvps10
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
