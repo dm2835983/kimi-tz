@@ -3,30 +3,36 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇷🇺 8.23 Netflix俄罗斯1, server: 45.144.3.125, port: 65035, type: vmess, uuid: fbbb75b6-881d-4aed-a57f-81a63a248eed, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 8.23 Netflix俄罗斯2, server: 45.147.200.240, port: 60429, type: vmess, uuid: 3a04da28-9632-4bae-9b35-dc9a9f56ac26, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 8.23 Netflix俄罗斯3, server: 45.140.169.80, port: 20012, type: vmess, uuid: ad95bad3-57cb-4251-ad57-5b63c7a049b4, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 8.23 Netflix俄罗斯4, server: 45.144.2.248, port: 21790, type: vmess, uuid: bd3171d0-0230-4d49-b66d-c1d7be2fd9ff, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 8.23 Netflix俄罗斯5, server: 45.136.244.127, port: 22942, type: vmess, uuid: 67f36f3e-1b0a-4068-8797-0df98f317942, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 8.23 Netflix俄罗斯6, server: 45.135.134.185, port: 58099, type: vmess, uuid: 55e73bf0-7c03-4405-93d0-9ffd23f4df55, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 8.23俄罗斯7, server: 45.144.178.172, port: 20831, type: vmess, uuid: 7ec939cf-b003-4d15-a3fa-b7e8bce97a24, alterId: 233, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: SP1, server: sp1.kimi.pw, port: 443, type: trojan, password: 75fa78b6, sni: sp1.kimi.pw, skip-cert-verify: false}
-  - {name: 🇪🇺 EU1, server: eu1.kimi.pw, port: 443, type: trojan, password: 5ff230c6, sni: eu1.kimi.pw, skip-cert-verify: false}
+  - {name: kimiherokuvps-伪装, server: 104.16.28.28, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: crimson-limit-1c71.578007348.workers.dev}}
+  - {name: kimiherokuvps2-伪装, server: 1.1.1.15, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: young-paper-4cc4.578007348.workers.dev}}
+  - {name: kimiherokuvps3-伪装, server: 104.16.16.74, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: ancient-limit-316c.578007348.workers.dev}}
+  - {name: kimiherokuvps4-伪装, server: icook.tw, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: gentle-meadow-017f.578007348.workers.dev}}
+  - {name: kimiherokuvps5-伪装, server: cloudflare.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: holy-paper-9932.578007348.workers.dev}}
+  - {name: kimiherokuvps6-伪装, server: 104.19.50.88, port: 443, type: vmess, uuid: a469227d-24fe-4c52-a211-ab884a106fe5, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: fragrant-snowflake-e1d3.578007348.workers.dev}}
+  - {name: kimiherokuvps7-伪装, server: 104.16.24.123, port: 443, type: vmess, uuid: 0347e17e-ab08-4dcf-a2af-49a66143214d, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: odd-sea-d184.578007348.workers.dev}}
+  - {name: kimiherokuvps8-伪装, server: 104.18.212.189, port: 443, type: vmess, uuid: 662cb67a-c99f-41fb-bba7-8245632f1681, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: icy-forest-4fa7.578007348.workers.dev}}
+  - {name: kimiherokuvps9-伪装, server: 104.19.10.161, port: 443, type: vmess, uuid: 4c0e4523-17f6-4fa0-89df-da926aad99dc, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: dry-cell-176a.578007348.workers.dev}}
+  - {name: kimiherokuvps10-伪装, server: 104.16.30.50, port: 443, type: vmess, uuid: ef994edf-9ac9-463e-bb13-02db238e1462, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: blue-queen-4c3c.578007348.workers.dev}}
+  - {name: SP1, server: sp1.kimi.pw, port: 443, type: trojan, password: 75fa78b6, sni: sp1.kimi.pw}
+  - {name: 🇪🇺 EU1, server: eu1.kimi.pw, port: 443, type: trojan, password: 5ff230c6, sni: eu1.kimi.pw}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: ♻️ 自动选择
@@ -34,13 +40,16 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: 🌍 国外媒体
@@ -49,13 +58,16 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: 📲 电报信息
@@ -63,13 +75,16 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: Ⓜ️ 微软服务
@@ -77,13 +92,16 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: 🍎 苹果服务
@@ -91,13 +109,16 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: 📢 谷歌FCM
@@ -106,13 +127,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
   - name: 🎯 全球直连
@@ -137,13 +161,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇷🇺 8.23 Netflix俄罗斯1
-      - 🇷🇺 8.23 Netflix俄罗斯2
-      - 🇷🇺 8.23 Netflix俄罗斯3
-      - 🇷🇺 8.23 Netflix俄罗斯4
-      - 🇷🇺 8.23 Netflix俄罗斯5
-      - 🇷🇺 8.23 Netflix俄罗斯6
-      - 🇷🇺 8.23俄罗斯7
+      - kimiherokuvps-伪装
+      - kimiherokuvps2-伪装
+      - kimiherokuvps3-伪装
+      - kimiherokuvps4-伪装
+      - kimiherokuvps5-伪装
+      - kimiherokuvps6-伪装
+      - kimiherokuvps7-伪装
+      - kimiherokuvps8-伪装
+      - kimiherokuvps9-伪装
+      - kimiherokuvps10-伪装
       - SP1
       - 🇪🇺 EU1
 rules:
@@ -2287,6 +2314,7 @@ rules:
  - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
  - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
  - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
+ - DOMAIN-SUFFIX,garena.com,🚀 节点选择
  - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
  - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
  - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
@@ -2480,6 +2508,8 @@ rules:
  - DOMAIN-SUFFIX,discord.media,🚀 节点选择
  - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
  - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
+ - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,duboxcdn.com,🚀 节点选择
  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
  - DOMAIN-SUFFIX,fb.com,🚀 节点选择
  - DOMAIN-SUFFIX,fb.me,🚀 节点选择
@@ -3303,163 +3333,4 @@ rules:
  - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
  - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
  - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.211.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,121.37.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,122.112.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.64.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.100.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.104.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.112.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.240.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.248.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.128.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.160.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.164.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.168.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.176.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.192.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.64.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.79.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.80.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,45.253.132.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.253.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.254.48.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,59.111.0.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,59.111.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.120.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.128.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.196.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.12.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.18.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.24.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.28.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.38.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.40.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.44.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.48.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.196.64.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,106.2.32.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,106.2.64.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,114.113.196.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,114.113.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,115.236.112.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,115.238.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
- - GEOIP,CN,🎯 全球直连
- - MATCH,🐟 漏网之鱼
+ - IP-CI
