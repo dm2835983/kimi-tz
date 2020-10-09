@@ -19,13 +19,13 @@ dns:
 proxies:
   - name: 🎶 解锁 ( Windows, Android )
     type: http
-    server: 155.94.134.95
-    port: 8848
+    server: 106.75.241.103
+    port: 4000
     
   - name: 🎶 解锁 ( macOS, iOS, Linux )
     type: http
-    server: 155.94.134.95
-    port: 8848
+    server: 106.75.241.103
+    port: 4000
 
 proxy-groups:
   - name: 🎵 网易云音乐
