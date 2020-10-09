@@ -5,7 +5,6 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇪🇺 EU1, server: eu1.kimi.pw, port: 443, type: trojan, password: 5ff230c6, sni: eu1.kimi.pw}
   - {name: 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1, server: 104.16.52.228, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: crimson-limit-1c71.578007348.workers.dev}}
   - {name: 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2, server: 104.16.63.118, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: young-paper-4cc4.578007348.workers.dev}}
   - {name: 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3, server: 104.16.60.238, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: ancient-limit-316c.578007348.workers.dev}}
@@ -22,13 +21,13 @@ proxies:
   - {name: 🇺🇸 clone4us, server: milkgogo.cf, port: 443, type: vmess, uuid: 0179f4ae-06df-11eb-a6ae-560002ffd0cf, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /43uC7SKw/, ws-headers: {Host: milkgogo.cf}}
   - {name: clone5jp, server: gfwdasb.xyz, port: 443, type: vmess, uuid: b769c5fe-06db-11eb-b54b-560002ffced4, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /amo0Qkw6/, ws-headers: {Host: gfwdasb.xyz}}
   - {name: 🇺🇸 clone6us, server: milkgogo.tk, port: 443, type: vmess, uuid: 12eeccfe-06e0-11eb-95c8-560002ffd150, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /7ZmqNi8B/, ws-headers: {Host: milkgogo.tk}}
+  - {name: 🇪🇺 EU1, server: eu1.kimi.pw, port: 443, type: trojan, password: 5ff230c6, sni: eu1.kimi.pw}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -45,12 +44,12 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -67,13 +66,13 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -90,12 +89,12 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -112,12 +111,12 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -134,12 +133,12 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -156,13 +155,13 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -179,6 +178,7 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -201,7 +201,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇪🇺 EU1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk1
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk2
       - 🏳️‍🌈 临时备用-禁长期大流量看视频-hrk3
@@ -218,6 +217,7 @@ proxy-groups:
       - 🇺🇸 clone4us
       - clone5jp
       - 🇺🇸 clone6us
+      - 🇪🇺 EU1
 rules:
  - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
